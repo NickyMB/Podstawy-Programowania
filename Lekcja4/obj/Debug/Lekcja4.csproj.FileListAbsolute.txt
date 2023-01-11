@@ -1,0 +1,16 @@
+C:\Users\mikol\OneDrive\WSB\Podstawy Programowania-praktyka\Lekcja4\obj\Debug\Lekcja4.csproj.AssemblyReference.cache
+C:\Users\mikol\OneDrive\WSB\Podstawy Programowania-praktyka\Lekcja4\obj\Debug\Lekcja4.csproj.SuggestedBindingRedirects.cache
+C:\Users\mikol\OneDrive\WSB\Podstawy Programowania-praktyka\Lekcja4\obj\Debug\Lekcja4.csproj.CoreCompileInputs.cache
+C:\Users\mikol\OneDrive\WSB\Podstawy Programowania-praktyka\Lekcja4\bin\Debug\Lekcja4.exe.config
+C:\Users\mikol\OneDrive\WSB\Podstawy Programowania-praktyka\Lekcja4\bin\Debug\Lekcja4.exe
+C:\Users\mikol\OneDrive\WSB\Podstawy Programowania-praktyka\Lekcja4\bin\Debug\Lekcja4.pdb
+C:\Users\mikol\OneDrive\WSB\Podstawy Programowania-praktyka\Lekcja4\obj\Debug\Lekcja4.exe
+C:\Users\mikol\OneDrive\WSB\Podstawy Programowania-praktyka\Lekcja4\obj\Debug\Lekcja4.pdb
+E:\OneDrive\WSB\Podstawy Programowania-praktyka\Lekcja4\bin\Debug\Lekcja4.exe.config
+E:\OneDrive\WSB\Podstawy Programowania-praktyka\Lekcja4\bin\Debug\Lekcja4.exe
+E:\OneDrive\WSB\Podstawy Programowania-praktyka\Lekcja4\bin\Debug\Lekcja4.pdb
+E:\OneDrive\WSB\Podstawy Programowania-praktyka\Lekcja4\obj\Debug\Lekcja4.csproj.AssemblyReference.cache
+E:\OneDrive\WSB\Podstawy Programowania-praktyka\Lekcja4\obj\Debug\Lekcja4.csproj.SuggestedBindingRedirects.cache
+E:\OneDrive\WSB\Podstawy Programowania-praktyka\Lekcja4\obj\Debug\Lekcja4.csproj.CoreCompileInputs.cache
+E:\OneDrive\WSB\Podstawy Programowania-praktyka\Lekcja4\obj\Debug\Lekcja4.exe
+E:\OneDrive\WSB\Podstawy Programowania-praktyka\Lekcja4\obj\Debug\Lekcja4.pdb

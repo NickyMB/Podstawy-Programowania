@@ -1,0 +1,14 @@
+E:\OneDrive\WSB\Podstawy Programowania\Lekcja1\bin\Debug\netcoreapp3.1\Lekcja1.exe
+E:\OneDrive\WSB\Podstawy Programowania\Lekcja1\bin\Debug\netcoreapp3.1\Lekcja1.deps.json
+E:\OneDrive\WSB\Podstawy Programowania\Lekcja1\bin\Debug\netcoreapp3.1\Lekcja1.runtimeconfig.json
+E:\OneDrive\WSB\Podstawy Programowania\Lekcja1\bin\Debug\netcoreapp3.1\Lekcja1.runtimeconfig.dev.json
+E:\OneDrive\WSB\Podstawy Programowania\Lekcja1\bin\Debug\netcoreapp3.1\Lekcja1.dll
+E:\OneDrive\WSB\Podstawy Programowania\Lekcja1\bin\Debug\netcoreapp3.1\Lekcja1.pdb
+E:\OneDrive\WSB\Podstawy Programowania\Lekcja1\obj\Debug\netcoreapp3.1\Lekcja1.csproj.AssemblyReference.cache
+E:\OneDrive\WSB\Podstawy Programowania\Lekcja1\obj\Debug\netcoreapp3.1\Lekcja1.GeneratedMSBuildEditorConfig.editorconfig
+E:\OneDrive\WSB\Podstawy Programowania\Lekcja1\obj\Debug\netcoreapp3.1\Lekcja1.AssemblyInfoInputs.cache
+E:\OneDrive\WSB\Podstawy Programowania\Lekcja1\obj\Debug\netcoreapp3.1\Lekcja1.AssemblyInfo.cs
+E:\OneDrive\WSB\Podstawy Programowania\Lekcja1\obj\Debug\netcoreapp3.1\Lekcja1.csproj.CoreCompileInputs.cache
+E:\OneDrive\WSB\Podstawy Programowania\Lekcja1\obj\Debug\netcoreapp3.1\Lekcja1.dll
+E:\OneDrive\WSB\Podstawy Programowania\Lekcja1\obj\Debug\netcoreapp3.1\Lekcja1.pdb
+E:\OneDrive\WSB\Podstawy Programowania\Lekcja1\obj\Debug\netcoreapp3.1\Lekcja1.genruntimeconfig.cache
