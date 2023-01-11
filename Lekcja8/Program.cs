@@ -6,6 +6,7 @@ using System.Threading.Tasks;
 
 namespace Lekcja8
 {
+    //Autor: Mikołaj Bacior
     internal class Program
     {
         static Queue<String> Przychodnia = new Queue<string>();
