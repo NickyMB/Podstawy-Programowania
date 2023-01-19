@@ -140,7 +140,7 @@ namespace Lekcja7
                 Console.WriteLine(Funkcje.dzielenie(pobrana1, pobrana2,1));
             }
 
-            void zadanie7()//zamiana liczv miejscami
+            void zadanie7()//Rekurencyjna suma liczb
             {
                 int pobrana1 = SprawdzenieLiczby("Podaj ile liczb zsumować");
                 Console.WriteLine(Funkcje.sumuj_rek(pobrana1, 1));
