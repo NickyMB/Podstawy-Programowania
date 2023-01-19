@@ -63,7 +63,16 @@ namespace Lekcja7
     }
     internal class Program
     {
-
+        static long sumka(int n)
+        {
+            int i;
+            long s = 0;
+            for(i = 0; i <= n;i++)
+            {
+                s += i;
+            }
+            return s;
+        }
         
         static void Main(string[] args)
         {
@@ -71,21 +80,17 @@ namespace Lekcja7
             void zadanie1()//Sumowanie liczb w klasie Funkcje
             {
                 int pobrana1 = SprawdzenieLiczby("Podaj do której liczby chcesz zsumować liczby");
-                Console.WriteLine(Funkcje.Sumuj(pobrana1));
+                for (int k=1;k<= pobrana1; k++)
+                {
+                    Console.WriteLine(sumka(k));
+                }
             }
+            
             void zadanie2()//Sumowanie liczb w obrębie klasy podstawowej
             {
-                int Sumuj(int x)
-                {
-                    int suma = 0;
-                    for (int i = 0; i <= x; i++)
-                    {
-                        suma += i;
-                    }
-                    return suma;
-                }
+
                 int pobrana1 = SprawdzenieLiczby("Podaj do której liczby chcesz zsumować liczby");
-                Console.WriteLine(Sumuj(pobrana1));
+                Console.WriteLine(Funkcje.Sumuj(pobrana1));
             }
 
             void zadanie3()//Sumowanie liczb klasą statyczną i metodą statyczną
@@ -123,7 +128,6 @@ namespace Lekcja7
                 Console.WriteLine("Wynik z dzielenia stałorzecinkowo: ");
                 Console.WriteLine(Funkcje.dzielenie(pobrana1, pobrana2,1));
             }
-
 
             void zadanie7()//zamiana liczv miejscami
             {

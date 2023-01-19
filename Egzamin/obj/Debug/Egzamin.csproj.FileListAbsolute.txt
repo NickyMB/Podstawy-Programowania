@@ -1,0 +1,8 @@
+E:\OneDrive\WSB\Podstawy-Programowania-Praktyka\Egzamin\bin\Debug\Egzamin.exe.config
+E:\OneDrive\WSB\Podstawy-Programowania-Praktyka\Egzamin\bin\Debug\Egzamin.exe
+E:\OneDrive\WSB\Podstawy-Programowania-Praktyka\Egzamin\bin\Debug\Egzamin.pdb
+E:\OneDrive\WSB\Podstawy-Programowania-Praktyka\Egzamin\obj\Debug\Egzamin.csproj.AssemblyReference.cache
+E:\OneDrive\WSB\Podstawy-Programowania-Praktyka\Egzamin\obj\Debug\Egzamin.csproj.SuggestedBindingRedirects.cache
+E:\OneDrive\WSB\Podstawy-Programowania-Praktyka\Egzamin\obj\Debug\Egzamin.csproj.CoreCompileInputs.cache
+E:\OneDrive\WSB\Podstawy-Programowania-Praktyka\Egzamin\obj\Debug\Egzamin.exe
+E:\OneDrive\WSB\Podstawy-Programowania-Praktyka\Egzamin\obj\Debug\Egzamin.pdb
