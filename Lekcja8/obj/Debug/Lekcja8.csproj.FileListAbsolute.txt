@@ -1,0 +1,8 @@
+C:\Users\mikol\OneDrive\WSB\Podstawy-Programowania-Praktyka\Lekcja8\bin\Debug\Lekcja8.exe.config
+C:\Users\mikol\OneDrive\WSB\Podstawy-Programowania-Praktyka\Lekcja8\bin\Debug\Lekcja8.exe
+C:\Users\mikol\OneDrive\WSB\Podstawy-Programowania-Praktyka\Lekcja8\bin\Debug\Lekcja8.pdb
+C:\Users\mikol\OneDrive\WSB\Podstawy-Programowania-Praktyka\Lekcja8\obj\Debug\Lekcja8.csproj.AssemblyReference.cache
+C:\Users\mikol\OneDrive\WSB\Podstawy-Programowania-Praktyka\Lekcja8\obj\Debug\Lekcja8.csproj.SuggestedBindingRedirects.cache
+C:\Users\mikol\OneDrive\WSB\Podstawy-Programowania-Praktyka\Lekcja8\obj\Debug\Lekcja8.csproj.CoreCompileInputs.cache
+C:\Users\mikol\OneDrive\WSB\Podstawy-Programowania-Praktyka\Lekcja8\obj\Debug\Lekcja8.exe
+C:\Users\mikol\OneDrive\WSB\Podstawy-Programowania-Praktyka\Lekcja8\obj\Debug\Lekcja8.pdb

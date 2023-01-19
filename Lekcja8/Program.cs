@@ -1,4 +1,5 @@
 ﻿using System;
+using System.Collections;
 using System.Collections.Generic;
 using System.Linq;
 using System.Text;
@@ -9,6 +10,7 @@ namespace Lekcja8
     //Autor: Mikołaj Bacior
     internal class Program
     {
+        //zadanie 1
         static Queue<String> Przychodnia = new Queue<string>();
         static Queue<String> PrzychodniaTMP = new Queue<string>();
         static void WyswietlZawartosc()
@@ -36,6 +38,34 @@ namespace Lekcja8
         {
             Console.WriteLine($"{osoba} opuściła koleję");
             Przychodnia = new Queue<string>(Przychodnia.Where(x => x != osoba));
+        }
+
+        //zadanie2
+        static Queue<int> Stos = new Queue<int>();
+        static void WyswietlZawartoscStosu()
+        {
+            Console.WriteLine($"Na stosie jest {Stos.Count} banktonów");
+            Stos = new Queue<int>(Stos.OrderBy(q => q));
+            Console.WriteLine("Oto jego zawartość:");
+            foreach (Object obj in Stos)
+                Console.WriteLine($"{obj}");
+        }
+        static void DodajBanknot(int banknot)
+        {
+            int l = 0;
+            Console.WriteLine($"Przyjęto nowy banknot do dodania {banknot} zł");
+            foreach(int i in Stos)
+            {
+                if(i<banknot)
+                {
+                    l++;
+                }
+            }
+            Console.WriteLine($"Na stosie jest {l} elementów");
+            Console.WriteLine($"Dodano banknot {banknot} zł do stosu");
+            Stos.Enqueue(banknot);
+            WyswietlZawartoscStosu();
+            Console.ReadKey();
         }
 
         static void Main(string[] args)
@@ -68,7 +98,11 @@ namespace Lekcja8
 
             void zadanie2()
             {
-                Console.ReadKey();
+                DodajBanknot(50);
+                DodajBanknot(100);
+                DodajBanknot(10);
+                DodajBanknot(20);
+                DodajBanknot(200);
             }
 
             string z_adania;
