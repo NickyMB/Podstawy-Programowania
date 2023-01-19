@@ -94,8 +94,6 @@ namespace Lekcja7
 
             void zadanie3()//rekurencyjne sumowanie,silnia,potęga
             {
-                int pobrana1 = SprawdzenieLiczby("Podaj ile liczb zsumować");
-                Console.WriteLine(Funkcje.sumuj_rek(pobrana1,1));
                 int pobrana2 = SprawdzenieLiczby("Podaj z jaiej liczby obliczyć silnie");
                 Console.WriteLine(Funkcje.Silnia(pobrana2));
                 int pobrana3 = SprawdzenieLiczby("Podaj liczbę potengowaną");
@@ -144,7 +142,8 @@ namespace Lekcja7
 
             void zadanie7()//zamiana liczv miejscami
             {
-                Console.WriteLine("Nie mam pojęcia na ten moment");
+                int pobrana1 = SprawdzenieLiczby("Podaj ile liczb zsumować");
+                Console.WriteLine(Funkcje.sumuj_rek(pobrana1, 1));
             }
 
             void zadanie8()//zwracanie podwojonej wartości argumentu oraz zwiększanie o jeden.
