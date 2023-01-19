@@ -163,7 +163,7 @@ namespace Lekcja7
 
             do
             {
-                Console.WriteLine($"{Environment.NewLine}Podaj nr. zadania od 1-9");
+                Console.WriteLine($"{Environment.NewLine}Podaj nr. zadania od 1-7");
                 z_adania = Console.ReadLine();
                 switch (z_adania)
                 {
@@ -205,7 +205,7 @@ namespace Lekcja7
                         break;
                     default:
                         Console.Clear();
-                        Console.Write("Proszę o wybranie numeru zadania z zakresu 1 - 9");
+                        Console.Write("Proszę o wybranie numeru zadania z zakresu 1 - 7");
                         Console.WriteLine();
                         break;
                 }
