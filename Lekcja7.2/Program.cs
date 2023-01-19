@@ -85,21 +85,14 @@ namespace Lekcja7
                     Console.WriteLine(sumka(k));
                 }
             }
-            
-            void zadanie2()//Sumowanie liczb w obrębie klasy podstawowej
-            {
 
-                int pobrana1 = SprawdzenieLiczby("Podaj do której liczby chcesz zsumować liczby");
-                Console.WriteLine(Funkcje.Sumuj(pobrana1));
-            }
-
-            void zadanie3()//Sumowanie liczb klasą statyczną i metodą statyczną
+            void zadanie2()//Sumowanie liczb klasą statyczną i metodą statyczną
             {
                 int pobrana1 = SprawdzenieLiczby("Podaj do której liczby chcesz zsumować liczby");
                 Console.WriteLine(Funkcje.Sumuj(pobrana1));
             }
 
-            void zadanie4()//rekurencyjne sumowanie,silnia,potęga
+            void zadanie3()//rekurencyjne sumowanie,silnia,potęga
             {
                 int pobrana1 = SprawdzenieLiczby("Podaj ile liczb zsumować");
                 Console.WriteLine(Funkcje.sumuj_rek(pobrana1,1));
@@ -108,6 +101,26 @@ namespace Lekcja7
                 int pobrana3 = SprawdzenieLiczby("Podaj liczbę potengowaną");
                 int pobrana4 = SprawdzenieLiczby("Podaj potęge");
                 Console.WriteLine(Funkcje.potega(pobrana3, pobrana4, pobrana3));
+            }
+            void zadanie4()//obliczanie wyrazu ciągu Fibonacciego
+            {
+                int podana = SprawdzenieLiczby("Którą liczbę ciągy Fibonacciego chcesz wyświetlić");
+                int n = 0;
+                int funFib(int x, int suma, int prev, int next)
+                {
+                    if (x == 1)
+                    {
+                        n++;
+                        return suma;
+                    }
+                    else
+                    {
+                        n++;
+                        return funFib(x-1, suma=prev + next, prev=next, next=suma);
+                    }
+                }
+                Console.WriteLine($"F({podana}) = {funFib(podana,0,0,1)}");
+                Console.WriteLine($"Funkcja została wywołana {n} razy");
             }
 
             void zadanie5()//przeciążona funkcja pola koła/kwadratu
@@ -142,27 +155,6 @@ namespace Lekcja7
                 }
                 int pobrana1 = SprawdzenieLiczby("Podaj liczbe");
                 Console.WriteLine(zwiekszanie(pobrana1));
-            }
-            
-            void zadanie9()//obliczanie wyrazu ciągu Fibonacciego
-            {
-                int podana = SprawdzenieLiczby("Którą liczbę ciągy Fibonacciego chcesz wyświetlić");
-                int n = 0;
-                int funFib(int x, int suma, int prev, int next)
-                {
-                    if (x == 1)
-                    {
-                        n++;
-                        return suma;
-                    }
-                    else
-                    {
-                        n++;
-                        return funFib(x-1, suma=prev + next, prev=next, next=suma);
-                    }
-                }
-                Console.WriteLine($"F({podana}) = {funFib(podana,0,0,1)}");
-                Console.WriteLine($"Funkcja została wywołana {n} razy");
             }
 
             int SprawdzenieLiczby(string text) //sprawdzenie czy użytkownik wpisał liczbę
@@ -226,12 +218,6 @@ namespace Lekcja7
                         Console.Clear();
                         Console.WriteLine($"Zadanie {z_adania}:");
                         zadanie8();
-                        break;
-
-                    case "9":
-                        Console.Clear();
-                        Console.WriteLine($"Zadanie {z_adania}:");
-                        zadanie9();
                         break;
                     default:
                         Console.Clear();
