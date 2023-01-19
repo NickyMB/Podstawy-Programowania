@@ -146,16 +146,6 @@ namespace Lekcja7
                 Console.WriteLine(Funkcje.sumuj_rek(pobrana1, 1));
             }
 
-            void zadanie8()//zwracanie podwojonej wartości argumentu oraz zwiększanie o jeden.
-            {
-                double zwiekszanie(int x)
-                {
-                    return x * 2 + 1;
-                }
-                int pobrana1 = SprawdzenieLiczby("Podaj liczbe");
-                Console.WriteLine(zwiekszanie(pobrana1));
-            }
-
             int SprawdzenieLiczby(string text) //sprawdzenie czy użytkownik wpisał liczbę
             {
                 int wprowadzona_li;
@@ -212,11 +202,6 @@ namespace Lekcja7
                         Console.Clear();
                         Console.WriteLine($"Zadanie {z_adania}:");
                         zadanie7();
-                        break;
-                    case "8":
-                        Console.Clear();
-                        Console.WriteLine($"Zadanie {z_adania}:");
-                        zadanie8();
                         break;
                     default:
                         Console.Clear();
