@@ -11,6 +11,51 @@ namespace Lekcja8
     internal class Program
     {
         //zadanie 1
+        static List<double> Oceny = new List<double>();
+        static void DodajOcene(double x)
+        {
+            Oceny.Add(x);
+            Oceny.Sort();
+        }
+        static void ObliczSrednia()
+        {
+            Oceny.Remove(Oceny.First());
+            Oceny.Remove(Oceny.Last());
+            Console.WriteLine($"Ocena średnia {Oceny.Average()}");
+        }
+        //zadanie 2
+        static Stack<String> kolory = new Stack<String>();
+        static Stack<String> kolory_TMP = new Stack<String>();
+        static void dodajKolor(string x)
+        {
+            kolory.Push(x);
+        }
+        static void firstandlast()
+        {
+            int a= 0;
+           foreach(string x in kolory) 
+            { 
+                if(a==0|a==kolory.Count)
+                {
+                    a++;
+                    dodajdotmp(x);
+                }
+                    a++;
+            }
+        }
+        static void dodajdotmp(string x)
+        {
+            kolory_TMP.Push(x);
+        }
+        static void wyswietlTMP()
+        {
+            foreach(string x in kolory_TMP)
+            {
+                Console.WriteLine(x);
+            }
+        }
+
+        //zadanie 3
         static Queue<String> Przychodnia = new Queue<string>();
         static Queue<String> PrzychodniaTMP = new Queue<string>();
         static void WyswietlZawartosc()
@@ -40,7 +85,7 @@ namespace Lekcja8
             Przychodnia = new Queue<string>(Przychodnia.Where(x => x != osoba));
         }
 
-        //zadanie2
+        //zadanie 4
         static Queue<int> Stos = new Queue<int>();
         static void WyswietlZawartoscStosu()
         {
@@ -72,6 +117,51 @@ namespace Lekcja8
         {
             void zadanie1()
             {
+                double i;
+                Console.WriteLine("- OBLICZANIE OCENY SEMESTRALNEJ.");
+                Console.WriteLine("   (Wpisz min. 3 oceny)");
+                do
+                {
+                    i = SprawdzenieLiczby("Wpisz ocenę cząstkową (lub 0 - aby zakonczyć)");
+                    if(i==0)
+                    {
+                        break;
+                    }
+                    else if(i<0|i>6)
+                    {
+                        continue;
+                    }
+                    else
+                    {
+                        DodajOcene(i);
+                    }
+
+                }while(i!=0);
+                ObliczSrednia();
+                Console.ReadKey();
+                
+            }
+
+            void zadanie2()
+            {
+                Console.WriteLine("Wpisz kilka kolorów od najbardziej ulubionegeo do najbrzydszego");
+                string i;
+                do
+                {
+                    Console.WriteLine("Wpisz kolor (lub ENTER  - aby zakończyć)");
+                    i = Console.ReadLine();
+                    if (i == "")
+                        break;
+                    else
+                        dodajKolor(i);
+                } while (true);
+                firstandlast();
+                wyswietlTMP();
+                Console.ReadKey();
+            }
+
+            void zadanie3()
+            {
                 DodajOsobe("Andy");
                 DodajOsobe("Kasia");
                 DodajOsobe("Julka");
@@ -96,7 +186,7 @@ namespace Lekcja8
                 Console.ReadKey();
             }
 
-            void zadanie2()
+            void zadanie4()
             {
                 DodajBanknot(50);
                 DodajBanknot(100);
@@ -105,13 +195,26 @@ namespace Lekcja8
                 DodajBanknot(200);
             }
 
+
+            double SprawdzenieLiczby(string text) //sprawdzenie czy użytkownik wpisał liczbę
+            {
+                double wprowadzona_li;
+                string pobrana;
+                do //pętla wykonująca się do momentu aż użytkownik wpisze liczbę
+                {
+                    Console.WriteLine(text);
+                    pobrana = Console.ReadLine();
+                } while (double.TryParse(pobrana, out wprowadzona_li) == false);
+                return Convert.ToInt32(pobrana);
+            }
+
             string z_adania;
             int a = 0;
 
             do
             {
                 Console.Clear();
-                Console.WriteLine($"{Environment.NewLine}Podaj nr. zadania od 1-2");
+                Console.WriteLine($"{Environment.NewLine}Podaj nr. zadania od 1-4");
                 z_adania = Console.ReadLine();
                 switch (z_adania)
                 {
@@ -125,9 +228,19 @@ namespace Lekcja8
                         Console.WriteLine($"Zadanie {z_adania}:");
                         zadanie2();
                         break;
+                    case "3":
+                        Console.Clear();
+                        Console.WriteLine($"Zadanie {z_adania}:");
+                        zadanie3();
+                        break;
+                    case "4":
+                        Console.Clear();
+                        Console.WriteLine($"Zadanie {z_adania}:");
+                        zadanie4();
+                        break;
                     default:
                         Console.Clear();
-                        Console.Write("Proszę o wybranie numeru zadania z zakresu 1 - 2");
+                        Console.Write("Proszę o wybranie numeru zadania z zakresu 1 - 4");
                         Console.WriteLine();
                         break;
                 }
